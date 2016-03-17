@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.blaizedtrail.kakhu.activities.RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Company info"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:hint="Name"
+            android:id="@+id/company_name"
+            android:maxLength="20"
+            android:inputType="textCapWords"
+            app:met_maxCharacters="20"
+            app:met_singleLineEllipsis="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/subtleColor"
+            android:layout_height="0.2dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Company email"
+            android:id="@+id/company_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="20"
+            app:met_maxCharacters="20"
+            app:met_singleLineEllipsis="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/subtleColor"
+            android:layout_height="0.2dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Company address"
+            android:maxLength="20"
+            app:met_maxCharacters="20"
+            app:met_singleLineEllipsis="true"
+            android:inputType="textCapSentences"
+            android:id="@+id/company_address"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/subtleColor"
+            android:layout_height="0.2dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Company branch"
+            android:maxLength="20"
+            app:met_maxCharacters="20"
+            app:met_singleLineEllipsis="true"
+            android:inputType="textCapWords"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:id="@+id/company_branch"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/subtleColor"
+            android:layout_height="0.2dp"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
